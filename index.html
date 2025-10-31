@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Dashboard</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <nav class="navbar">
+            <!-- header start -->
+          <div class="header-start">
+            <div class="start-item">
+                                    <!--bar icon  -->
+              <i class="fas fa-bars icon"></i>
+            </div>
+            <div class="start-item">
+                                    <!-- github icon -->
+              <i class="fab fa-github icon" style="font-size: 30px;border:none"></i>
+            </div>
+  
+            <div class="start-item dashboard">Dashboard</div>
+          </div>
+            <!-- header end -->
+          <div class="header-end">
+            <div class="search">
+                     <!-- seaarch icon -->
+              <i class="fas fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search or jump to..." />
+            </div>
+            <div class="end-item">
+                            <!-- copilot icon -->
+              <i class="fab fa-github-alt icon"></i>
+                            <!-- drop down icon -->
+              <i class="fas fa-caret-down dropdown-icon"></i>
+            </div>
+            <div class="end-item">
+                           <!-- plus icon & dropdown icon-->
+              <i class="fas fa-plus icon"></i>
+              <i class="fas fa-caret-down dropdown-icon"></i>
+            </div>
+            <div class="end-item">
+                           <!-- issue circle with dot icon -->
+              <i class="fa-solid fa-circle-dot "style="border: 1px solid #30363d; padding:5px;"></i>
+            </div>
+            <div class="end-item">
+                           <!-- pull request icon -->
+              <i class="fas fa-code-pull-request icon"></i>
+            </div>
+            <div class="end-item">
+                          <!-- inbox icon -->
+              <i class="fas fa-inbox icon"></i>
+            </div>          
+                           <!--profile img icon  -->
+            <div class="profile-photo">
+              <img src="profile.webp" alt="Profile photo"/>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Home Section -->
+      <section class="home-section">
+        <div class="home-container">
+          <h2>Home</h2>
+          <div class="input1">
+            <input type="text" placeholder="Ask Copilot hammad" />
+                           <!-- plane icon -->
+            <i class="fa-solid fa-paper-plane fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+          </div>
+                  <!-- suggestion container -->
+          <div class="suggestion">
+            <div class="suggestion1">
+              <i style="color: rgb(160, 115, 160)" class="fa-solid fa-eye"></i>
+              <span>Interpret an architecture diagram</span>
+            </div>
+            <div class="suggestion2">
+              <i style="color: greenyellow" class="fas fa-code-pull-request icon"></i>
+              <span>My open pull requests</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-container">
+          <div class="repo-header">
+            <span class="heading">Top repositories</span>
+            <button class="new-repo-button">
+              <i class="fa-solid fa-book"></i> New
+            </button>
+          </div>
+
+          <div class="repo-search">
+            <input type="text" placeholder="Find a repository..." />
+          </div>
+
+          <div class="repo-list">
+            <div class="repo-list-item">
+              <div class="repo-list-item-1">
+                <img src="profile.webp" />
+                <h3>hammadmuntazir/Js.hammad</h3>
+              </div>
+              <div class="repo-list-item-1">
+                <img src="profile.webp" />
+                <h3>hammadmuntazir/DSA solutions</h3>
+              </div>
+              <div class="repo-list-item-1">
+                <img src="profile.webp" />
+                <h3>hammadmuntazir/Python_Pandas</h3>
+              </div>
+              <div class="repo-list-item-1">
+                <img src="profile.webp" />
+                <h3>hammadmuntazir/SQL</h3>
+              </div>
+              <div class="repo-list-item-1">
+                <img src="profile.webp" />
+                <h3>hammadmuntazir/Ecommerce-project</h3>
+              </div>
+              <div class="repo-list-item-1">
+                <img src="profile.webp" />
+                <h3>hammadmuntazir/HTML-CSS-projects</h3>
+              </div>
+              <div class="repo-list-item-1">
+                <p>See more...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feed Section -->
+      <section class="feed-section">
+        <div class="feed-container">
+          <div class="feed-header">
+            <h3 class="feed-title">Feed</h3>
+            <div class="feed-actions">
+              <div class="feed-filter">
+                <i class="fa-solid fa-bars" style="font-size: 12px;"></i>
+                <span>Filter</span>
+              </div>
+              <div class="feed-nav">
+                <i class="fa-solid fa-square-caret-left"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trending Section -->
+          <section class="trending-section">
+            <div class="trending-header">
+              <div class="trending-title">
+                <i class="fa-solid fa-chart-line" style="color: #74c0fc"></i>
+                <span>Trending repositories</span>
+                <a href="#" class="see-more">See more</a>
+              </div>
+              <button class="more-options-btn">
+                <i class="fa-solid fa-ellipsis fa-rotate-180"></i>
+              </button>
+            </div>
+
+            <div class="trending-repo-list">
+              <!-- Repo 1 -->
+              <div class="trending-repo-item">
+                <div class="repo-main">
+                  <img src="deepseek-logo.webp" class="repo-logo" alt="DeepSeek Logo" />
+                  <a href="#" class="repo-name">deepseek-ai/DeepSeek-OCR</a>
+                </div>
+                <p class="repo-description">
+                  Contexts Optical Compression for efficient OCR understanding.
+                </p>
+                <div class="repo-meta">
+                  <div class="repo-language">
+                    <span class="lang-dot python-dot"></span> Python
+                  </div>
+                  <div class="repo-stars">
+                    <i class="fa-regular fa-star fa-rotate-90"></i> 16k
+                  </div>
+                </div>
+                <div class="repo-actions">
+                  <button class="star-btn">
+                    <i class="fa-regular fa-star fa-rotate-90"></i> Star
+                  </button>
+                  <button class="dropdown-toggle">
+                    <i class="fa-solid fa-chevron-right fa-rotate-90"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Repo 2 -->
+              <div class="trending-repo-item">
+                <div class="repo-main">
+                  <div class="repo-logo">M</div>
+                  <a href="#" class="repo-name">minio/minio</a>
+                </div>
+                <p class="repo-description">
+                  High-performance, S3 compatible object store under GNU AGPLv3 license.
+                </p>
+                <div class="repo-meta">
+                  <div class="repo-language">
+                    <span class="lang-dot" style="background-color: #00ADD8"></span>
+                    Go
+                  </div>
+                  <div class="repo-stars">
+                    <i class="fa-regular fa-star fa-rotate-90"></i> 56.8k
+                  </div>
+                </div>
+                <div class="repo-actions">
+                  <button class="star-btn">
+                    <i class="fa-regular fa-star fa-rotate-90"></i> Star
+                  </button>
+                  <button class="dropdown-toggle">
+                    <i class="fa-solid fa-chevron-right fa-rotate-90"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Status</a>
+            <a href="#">Community</a>
+            <a href="#">Docs</a>
+            <a href="#">Contact</a>
+            <a href="#">Manage cookies</a>
+          </div>
+
+          <p class="footer-note">
+            Do not share my personal information
+          </p>
+            
+          <div class="footer-bottom">
+            <i class="fab fa-github footer-github-icon"></i>
+            <span>© 2025 GitHub, Inc.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
