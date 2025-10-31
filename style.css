@@ -64,6 +64,10 @@ body {
 .end-item:hover {
   background-color: #21262d;
 }
+.start-item .fab.fa-github {
+  font-size: 30px;
+  border: none;
+}
 
 .search {
   position: relative;
@@ -86,7 +90,6 @@ body {
 .search i {
   border: 1px solid #30363d;
   padding:5px;
-  position: absolute;
   right: 0.5px;
   color: #7d8590;
 }
@@ -724,6 +727,9 @@ body {
     width: 240px;
     display:flex;
   }
+  .search i{
+    order:-1;
+  }
 
   .home-container h2 {
     font-size: 24px;
@@ -740,4 +746,50 @@ body {
   .trending-title {
     font-size: 18px;
   }
+}
+
+/* FOR Extra Small Screens (e.g., < 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .header-start,
+    .header-end {
+      gap: 2px; 
+    }
+
+    .start-item,
+    .end-item {
+      padding: 4px 6px; 
+    }
+    
+    .icon,
+    .search i,
+    .profile-photo {
+        padding: 0; 
+        border: none;
+    }
+    .profile-photo img {
+        width: 28px; 
+        height: 28px;
+    }
+    
+    .dashboard {
+        font-weight: 600;
+        font-size: 14px;
+        display: block; 
+        overflow: hidden; 
+        white-space: nowrap; 
+    }
+    
+    .start-item .fab.fa-github {
+        font-size: 20px;
+        border: none;
+        padding: 0;
+    }
 }
