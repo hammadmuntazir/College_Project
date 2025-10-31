@@ -310,16 +310,20 @@ body {
 .repo-list-item-1 h3 {
   font-size: 14px;
   font-weight: 500;
-  color: #58a6ff;
+  color: gray;
+}
+.repo-list-item-1 h3:hover{
+  color:#58a6ff;
 }
 /* for see more */
 .repo-list-item-1:last-child {
-  color: #58a6ff;
+  color: gray;
   cursor: pointer;
   margin-top: 8px;
 }
 
 .repo-list-item-1:last-child:hover {
+  color:#58a6ff;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -747,8 +751,10 @@ body {
     font-size: 18px;
   }
 }
+/* Add this new section at the very end of your style.css */
 
-/* FOR Extra Small Screens (e.g., < 480px) */
+/* Extra Small Screens (e.g., < 480px) */
+/* Extra Small Screens (e.g., < 480px) */
 @media (max-width: 480px) {
     .navbar {
         display: flex;
@@ -760,7 +766,7 @@ body {
     
     .header-start,
     .header-end {
-      gap: 3.5px; 
+      gap: 2px; 
     }
 
     .start-item,
@@ -793,4 +799,3 @@ body {
         padding: 0;
     }
 }
-
