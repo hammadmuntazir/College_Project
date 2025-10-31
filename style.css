@@ -760,7 +760,7 @@ body {
     
     .header-start,
     .header-end {
-      gap: 2px; 
+      gap: 3.5px; 
     }
 
     .start-item,
@@ -793,3 +793,4 @@ body {
         padding: 0;
     }
 }
+
